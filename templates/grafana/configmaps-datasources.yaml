@@ -1,4 +1,3 @@
-{{- if or (and .Values.grafana.enabled .Values.grafana.sidecar.datasources.enabled) .Values.grafana.forceDeployDatasources }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -64,4 +63,17 @@ data:
 {{- if .Values.grafana.additionalDataSources }}
 {{ tpl (toYaml .Values.grafana.additionalDataSources | indent 4) . }}
 {{- end }}
-{{- end }}
+
+    # Add CloudWatch datasource
+    - name: CloudWatch
+      type: cloudwatch
+      access: proxy
+      url: https://monitoring.us-west-2.amazonaws.com  # Replace with the appropriate CloudWatch endpoint URL
+     
+
+    # Add InfluxDB datasource
+    - name: InfluxDB
+      type: influxdb
+      access: proxy
+      url: https://influxdb.example.com  # Replace with your InfluxDB URL
+    
