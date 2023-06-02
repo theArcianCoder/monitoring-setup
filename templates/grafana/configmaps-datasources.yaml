@@ -75,5 +75,5 @@ data:
     - name: InfluxDB
       type: influxdb
       access: proxy
-      url: https://influxdb.example.com  # Replace with your InfluxDB URL
+      url: https://http://<releaese-name><exporter-name>.<name>:<port-number>  # Replace with your InfluxDB URL
     
