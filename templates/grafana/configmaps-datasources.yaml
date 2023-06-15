@@ -68,12 +68,17 @@ data:
     - name: CloudWatch
       type: cloudwatch
       access: proxy
-      url: https://monitoring.us-west-2.amazonaws.com  # Replace with the appropriate CloudWatch endpoint URL
+      url: {{ $.Values.grafana.sidecar.datasources.cloudwatch.url }}
      
 
     # Add InfluxDB datasource
     - name: InfluxDB
       type: influxdb
       access: proxy
-      url: https://http://<releaese-name><exporter-name>.<name>:<port-number>  # Replace with your InfluxDB URL
+      url: {{ $.Values.grafana.sidecar.datasources.influxdb.url }}
     
+    # Add InfluxDB datasource
+    - name: ElasticSearch
+      type: elasticsearch
+      access: proxy
+      url: {{ $.Values.grafana.sidecar.datasources.elasticsearch.url }}
