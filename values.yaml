@@ -840,7 +840,12 @@ grafana:
       enabled: true
       defaultDatasourceEnabled: true
       isDefaultDatasource: true
-
+      cloudwatch:
+         url: abc
+      influxdb:
+         url: abc
+      elasticsearch:
+         url: abc
       uid: prometheus
 
       ## URL of prometheus datasource
