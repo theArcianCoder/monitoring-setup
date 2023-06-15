@@ -24,9 +24,9 @@ Clone the repo using command :
 Open the project using the Integrated terminal :
 
 ```bash
-  helm install <release-name> ./
+  sh {script_filename}
 ```
-Your Helm chart for custom monitoring gets installed without hassle.
+Enter the required information i.e; release_name, required_url etc.
 
 Change the service type to NodePort or LoadBalancer according to the ease of access.
 
