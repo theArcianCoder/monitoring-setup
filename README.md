@@ -98,7 +98,7 @@ Sidecar image used in the repository :  docker.io/thearciancoder/image
 Moreover you can add more custom dashboards on path: /templates/grafana/dashboards-1.14
 
 ## Add datasources in the monitoring stack.
-To add data sources in the Grafana folder using the `configmaps-datasources.yaml` file for the `kube-prometheus-stack`, you can modify the file directly or provide an updated version through a ConfigMap in your Kubernetes cluster. Here's an example of how you can define data sources in `configmaps-datasources.yaml`:
+To add data sources in the  '/templates/grafana' using the `configmaps-datasources.yaml` file for the `monitoring-stack`, you can modify the file directly or provide an updated version through a ConfigMap in your Kubernetes cluster. Here's an example of how you can define data sources in `configmaps-datasources.yaml`:
 
 ```yaml
 # configmaps-datasources.yaml
