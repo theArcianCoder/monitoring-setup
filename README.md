@@ -209,3 +209,8 @@ Terraform will execute the provisioner after creating the specified resource. It
 Note: The `local-exec` provisioner runs the command on the machine running Terraform, not on the resource being provisioned. Make sure that the machine running Terraform has the necessary prerequisites (e.g., Git, Bash) installed and configured correctly.
 
 Remember to adjust the configuration according to your specific repository, directory, and file names.
+
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Right%20Light%20Skin%20Tone.png" alt="Backhand Index Pointing Right Light Skin Tone" width="25" height="25" /> Note :
+
+Whenever you are running the entire setup on a cloud, attach a Cloudwatch access policy in the nodes which allow cloudwatch datasource to have access for the generation of metrics. 
+
